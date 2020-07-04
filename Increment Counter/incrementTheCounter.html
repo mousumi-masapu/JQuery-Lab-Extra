@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Increment The Counter</title>
+<!--The integrity attribute allows the browser to check the source file contents against the supplied hash value to ensure that the code is never loaded if the source has been modified.
+The crossorigin attribute indicates if and how the CORS (Cross-Origin Resource Sharing) credential-passing mechanism will be used.-->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" 
+crossorigin="anonymous"></script>
+</head> 
+    <!--A lot of sites don’t span the full screen length (i.e. fixed width sites), 
+        so webmasters use a “wrapper” to set the appropriate width and act as a full screen would.-->
+    <div id="wrapper"></div>
+    <script src="incrementCounter.js"></script>
+<script>
+window.onload=function(){
+increment("#wrapper");
+}
+</script>
+</body>
+</html>
